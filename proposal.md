@@ -18,14 +18,14 @@ Las métricas actuales/historicas son las siguientes:
 - Nivel de acumulación de casas 
 - Metros cuadrados disponibles
 
+Una vez obtenidas estás metricas, se le da la posibilidad de compararlas con las métricas de otros barrios privados una a una. Además es posible obtener un ranking de los barrios privados según la métrica seleccionada, y evaluar el progreso de uno sobre otra.
+
 Las metricas resultantes de comparaciones con un mismo barrio privado, pero en distintas fechas: 
 
 - Tasa de crecimiento entre las fechas elegidas
 - Número de aumento de casas
 - Aumento del porcentaje de terreno utilizado
 - Disminución del porcentaje de terreno disponible
-
-Una vez obtenidas estás metricas, se le da la posibilidad de compararlas con las métricas de otros barrios privados, para obtener un ranking de los barrios privados según la métrica seleccionada, y evaluar el progreso de uno sobre otra.
 
 ---------------------- 
 
@@ -60,8 +60,13 @@ Se propone el siguiente modelo relacional para la base de datos, el cual permite
 ---------
 ## Requerimientos funcionales
 
-
-
+- El sistema debe permitir al usuario ingresar el KMZ de un barrio privado, ingresar una fecha y calcular las métricas correspondientes.
+- El sistema debe permitir al usuario seleccionar dos barrios privados distintos para comparar sus métricas actuales y/o historicas, mostrando visualmente dinamicas de cambio.
+- El sistema debe permitir al usuario visualizar un ranking de los barrios privados según la métrica seleccionada.
+- El sistema debe permitir al usuario evaluar el progreso de un barrio privado sobre otro en términos de las métricas calculadas.
+- El sistema debe permitir al usuario elegir un peridodo de tiempo para calcular las métricas de desarrollo de un mismo barrio privado en distintas fechas.
+- El sistema debe guardar los barrios privados junto con sus métricas calculadas en la base de datos para su posterior recuperación.
+- El sistema debe mostrar al usuario un dashboard con estadísticas del uso de la aplicación y botones de atajo para acciones frecuentes, como comparar métricas entre barrios privados.
 
 
 
